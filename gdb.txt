@@ -1,0 +1,503 @@
+Open On-Chip Debugger 0.8.0-rc1-dev-00001-gd7cbdee-dirty (2014-03-31-22:37)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.sourceforge.net/doc/doxygen/bugs.html
+User : 13 2 command.c:546 command_print(): debug_level: 3
+Debug: 14 2 options.c:98 add_default_dirs(): bindir=/usr/local/bin
+Debug: 15 2 options.c:99 add_default_dirs(): pkgdatadir=/usr/local/share/openocd
+Debug: 16 2 options.c:100 add_default_dirs(): run_prefix=
+Debug: 17 2 configuration.c:44 add_script_search_dir(): adding /Users/machinaut/.openocd
+Debug: 18 2 configuration.c:44 add_script_search_dir(): adding /usr/local/share/openocd/site
+Debug: 19 2 configuration.c:44 add_script_search_dir(): adding /usr/local/share/openocd/scripts
+Debug: 20 2 configuration.c:84 find_file(): found ti_tmdx570ls20susb.cfg
+Debug: 21 2 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_adapter_khz 1500
+Debug: 22 2 command.c:145 script_debug(): command - adapter_khz ocd_adapter_khz 1500
+Debug: 24 2 core.c:1644 jtag_config_khz(): handle jtag khz
+Debug: 25 2 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 26 2 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+User : 27 2 command.c:546 command_print(): adapter speed: 1500 kHz
+Debug: 28 2 configuration.c:84 find_file(): found /Users/machinaut/Code/openocd/tcl/interface/ftdi/xds100v2.cfg
+Debug: 29 2 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_interface ftdi
+Debug: 30 2 command.c:145 script_debug(): command - interface ocd_interface ftdi
+Debug: 32 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_device_desc'...
+Debug: 33 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_serial'...
+Debug: 34 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_channel'...
+Debug: 35 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_layout_init'...
+Debug: 36 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_layout_signal'...
+Debug: 37 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_set_signal'...
+Debug: 38 2 command.c:366 register_command_handler(): registering 'ocd_ftdi_vid_pid'...
+Info : 39 2 transport.c:118 allow_transports(): only one transport option; autoselect 'jtag'
+Debug: 40 2 command.c:366 register_command_handler(): registering 'ocd_jtag_flush_queue_sleep'...
+Debug: 41 2 command.c:366 register_command_handler(): registering 'ocd_jtag_rclk'...
+Debug: 42 2 command.c:366 register_command_handler(): registering 'ocd_jtag_ntrst_delay'...
+Debug: 43 2 command.c:366 register_command_handler(): registering 'ocd_jtag_ntrst_assert_width'...
+Debug: 44 2 command.c:366 register_command_handler(): registering 'ocd_scan_chain'...
+Debug: 45 2 command.c:366 register_command_handler(): registering 'ocd_jtag_reset'...
+Debug: 46 3 command.c:366 register_command_handler(): registering 'ocd_runtest'...
+Debug: 47 3 command.c:366 register_command_handler(): registering 'ocd_irscan'...
+Debug: 48 3 command.c:366 register_command_handler(): registering 'ocd_verify_ircapture'...
+Debug: 49 3 command.c:366 register_command_handler(): registering 'ocd_verify_jtag'...
+Debug: 50 3 command.c:366 register_command_handler(): registering 'ocd_tms_sequence'...
+Debug: 51 3 command.c:366 register_command_handler(): registering 'ocd_wait_srst_deassert'...
+Debug: 52 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 53 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 54 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 55 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 56 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 57 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 58 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 59 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 60 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 61 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 62 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 63 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 64 3 command.c:366 register_command_handler(): registering 'ocd_jtag'...
+Debug: 65 3 command.c:366 register_command_handler(): registering 'ocd_svf'...
+Debug: 66 3 command.c:366 register_command_handler(): registering 'ocd_xsvf'...
+Debug: 67 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_vid_pid 0x0403 0xa6d0 0x0403 0x6010
+Debug: 68 3 command.c:145 script_debug(): command - ftdi_vid_pid ocd_ftdi_vid_pid 0x0403 0xa6d0 0x0403 0x6010
+Debug: 70 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_init 0x0038 0x597b
+Debug: 71 3 command.c:145 script_debug(): command - ftdi_layout_init ocd_ftdi_layout_init 0x0038 0x597b
+Debug: 73 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal nTRST -data 0x0010
+Debug: 74 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal nTRST -data 0x0010
+Debug: 76 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal nSRST -oe 0x0100
+Debug: 77 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal nSRST -oe 0x0100
+Debug: 79 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal nEMU_EN -data 0x0020
+Debug: 80 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal nEMU_EN -data 0x0020
+Debug: 82 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal nEMU0 -data 0x0040
+Debug: 83 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal nEMU0 -data 0x0040
+Debug: 85 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal nEMU1 -data 0x1000
+Debug: 86 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal nEMU1 -data 0x1000
+Debug: 88 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal PWR_RST -data 0x0800
+Debug: 89 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal PWR_RST -data 0x0800
+Debug: 91 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_layout_signal LOOPBACK -data 0x4000
+Debug: 92 3 command.c:145 script_debug(): command - ftdi_layout_signal ocd_ftdi_layout_signal LOOPBACK -data 0x4000
+Debug: 94 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_echo 
+Info : to use this adapter you MUST add ``init; ftdi_set_signal PWR_RST 1; jtag arp_init'' to the end of your config file!
+
+Debug: 95 3 command.c:145 script_debug(): command - echo ocd_echo 
+Info : to use this adapter you MUST add ``init; ftdi_set_signal PWR_RST 1; jtag arp_init'' to the end of your config file!
+
+User : 97 3 command.c:763 jim_echo(): 
+Info : to use this adapter you MUST add ``init; ftdi_set_signal PWR_RST 1; jtag arp_init'' to the end of your config file!
+
+Debug: 98 3 configuration.c:84 find_file(): found /Users/machinaut/Code/openocd/tcl/target/ti_tms570.cfg
+Debug: 99 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_adapter_khz 1500
+Debug: 100 3 command.c:145 script_debug(): command - adapter_khz ocd_adapter_khz 1500
+Debug: 102 3 core.c:1644 jtag_config_khz(): handle jtag khz
+Debug: 103 3 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 104 3 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+User : 105 3 command.c:546 command_print(): adapter speed: 1500 kHz
+Debug: 106 3 configuration.c:84 find_file(): found /Users/machinaut/Code/openocd/tcl/target/icepick.cfg
+Debug: 107 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag newtap tms570 dap -irlen 4 -ircapture 0x1 -irmask 0xf -expected-id 0x0B7B302F -disable
+Debug: 108 3 command.c:145 script_debug(): command - ocd_jtag ocd_jtag newtap tms570 dap -irlen 4 -ircapture 0x1 -irmask 0xf -expected-id 0x0B7B302F -disable
+Debug: 109 3 tcl.c:554 jim_newtap_cmd(): Creating New Tap, Chip: tms570, Tap: dap, Dotted: tms570.dap, 9 params
+Debug: 110 3 tcl.c:571 jim_newtap_cmd(): Processing option: -irlen
+Debug: 111 3 tcl.c:571 jim_newtap_cmd(): Processing option: -ircapture
+Debug: 112 3 tcl.c:571 jim_newtap_cmd(): Processing option: -irmask
+Debug: 113 3 tcl.c:571 jim_newtap_cmd(): Processing option: -expected-id
+Debug: 114 3 tcl.c:571 jim_newtap_cmd(): Processing option: -disable
+Debug: 115 3 core.c:1319 jtag_tap_init(): Created Tap: tms570.dap @ abs position 0, irlen 4, capture: 0x1 mask: 0xf
+Debug: 116 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag configure tms570.dap -event tap-enable icepick_c_tapenable tms570.jrc 0
+Debug: 117 3 command.c:145 script_debug(): command - ocd_jtag ocd_jtag configure tms570.dap -event tap-enable icepick_c_tapenable tms570.jrc 0
+Debug: 118 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag newtap tms570 jrc -irlen 6 -ircapture 0x1 -irmask 0x3f -expected-id 0x0B7B302F -ignore-version
+Debug: 119 3 command.c:145 script_debug(): command - ocd_jtag ocd_jtag newtap tms570 jrc -irlen 6 -ircapture 0x1 -irmask 0x3f -expected-id 0x0B7B302F -ignore-version
+Debug: 120 3 tcl.c:554 jim_newtap_cmd(): Creating New Tap, Chip: tms570, Tap: jrc, Dotted: tms570.jrc, 9 params
+Debug: 121 3 tcl.c:571 jim_newtap_cmd(): Processing option: -irlen
+Debug: 122 3 tcl.c:571 jim_newtap_cmd(): Processing option: -ircapture
+Debug: 123 3 tcl.c:571 jim_newtap_cmd(): Processing option: -irmask
+Debug: 124 3 tcl.c:571 jim_newtap_cmd(): Processing option: -expected-id
+Debug: 125 3 tcl.c:571 jim_newtap_cmd(): Processing option: -ignore-version
+Debug: 126 3 core.c:1319 jtag_tap_init(): Created Tap: tms570.jrc @ abs position 1, irlen 6, capture: 0x1 mask: 0x3f
+Debug: 127 3 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag configure tms570.jrc -event setup jtag tapenable tms570.dap
+Debug: 128 4 command.c:145 script_debug(): command - ocd_jtag ocd_jtag configure tms570.jrc -event setup jtag tapenable tms570.dap
+Debug: 129 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag configure tms570.jrc -event post-reset runtest 100
+Debug: 130 4 command.c:145 script_debug(): command - ocd_jtag ocd_jtag configure tms570.jrc -event post-reset runtest 100
+Debug: 131 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_target create tms570.cpu cortex_r4 -endian big -chain-position tms570.dap -coreid 0 -dbgbase 0x00001003
+Debug: 132 4 command.c:145 script_debug(): command - ocd_target ocd_target create tms570.cpu cortex_r4 -endian big -chain-position tms570.dap -coreid 0 -dbgbase 0x00001003
+Debug: 133 4 target.c:1722 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 134 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 135 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 136 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 137 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 138 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 139 4 command.c:366 register_command_handler(): registering 'ocd_arm'...
+Debug: 140 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 141 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 142 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 143 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 144 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 145 4 command.c:366 register_command_handler(): registering 'ocd_dap'...
+Debug: 146 4 command.c:366 register_command_handler(): registering 'ocd_cache_config'...
+Debug: 147 4 command.c:366 register_command_handler(): registering 'ocd_cortex_r4'...
+Debug: 148 4 command.c:366 register_command_handler(): registering 'ocd_cortex_r4'...
+Debug: 149 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 150 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 151 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 152 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 153 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 154 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 155 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 156 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 157 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 158 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 159 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 160 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 161 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 162 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 163 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 164 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 165 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 166 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 167 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 168 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 169 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 170 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 171 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 172 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 173 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 174 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 175 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 176 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 177 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 178 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 179 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 180 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 181 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 182 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 183 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 184 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 185 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 186 4 command.c:366 register_command_handler(): registering 'ocd_tms570.cpu'...
+Debug: 187 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu configure -event gdb-attach 
+	cortex_r4 dbginit
+	halt
+
+Debug: 188 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu configure -event gdb-attach 
+	cortex_r4 dbginit
+	halt
+
+Debug: 189 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu configure -event reset-assert 
+	global _CHIPNAME
+
+	# assert warm system reset through ICEPick
+	icepick_c_wreset $_CHIPNAME.jrc
+
+Debug: 190 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu configure -event reset-assert 
+	global _CHIPNAME
+
+	# assert warm system reset through ICEPick
+	icepick_c_wreset $_CHIPNAME.jrc
+
+Debug: 191 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_reset_config trst_only
+Debug: 192 4 command.c:145 script_debug(): command - reset_config ocd_reset_config trst_only
+User : 194 4 command.c:546 command_print(): trst_only separate trst_push_pull
+Debug: 195 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_init
+Debug: 196 4 command.c:145 script_debug(): command - init ocd_init
+Debug: 198 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_target init
+Debug: 199 4 command.c:145 script_debug(): command - ocd_target ocd_target init
+Debug: 201 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_target names
+Debug: 202 4 command.c:145 script_debug(): command - ocd_target ocd_target names
+Debug: 203 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu cget -event gdb-flash-erase-start
+Debug: 204 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu cget -event gdb-flash-erase-start
+Debug: 205 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu configure -event gdb-flash-erase-start reset init
+Debug: 206 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu configure -event gdb-flash-erase-start reset init
+Debug: 207 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu cget -event gdb-flash-write-end
+Debug: 208 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu cget -event gdb-flash-write-end
+Debug: 209 4 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_tms570.cpu configure -event gdb-flash-write-end reset halt
+Debug: 210 4 command.c:145 script_debug(): command - ocd_tms570.cpu ocd_tms570.cpu configure -event gdb-flash-write-end reset halt
+Debug: 211 4 target.c:1285 handle_target_init_command(): Initializing targets...
+Debug: 212 4 command.c:366 register_command_handler(): registering 'ocd_target_request'...
+Debug: 213 4 command.c:366 register_command_handler(): registering 'ocd_trace'...
+Debug: 214 4 command.c:366 register_command_handler(): registering 'ocd_trace'...
+Debug: 215 5 command.c:366 register_command_handler(): registering 'ocd_fast_load_image'...
+Debug: 216 5 command.c:366 register_command_handler(): registering 'ocd_fast_load'...
+Debug: 217 5 command.c:366 register_command_handler(): registering 'ocd_profile'...
+Debug: 218 5 command.c:366 register_command_handler(): registering 'ocd_virt2phys'...
+Debug: 219 5 command.c:366 register_command_handler(): registering 'ocd_reg'...
+Debug: 220 5 command.c:366 register_command_handler(): registering 'ocd_poll'...
+Debug: 221 5 command.c:366 register_command_handler(): registering 'ocd_wait_halt'...
+Debug: 222 5 command.c:366 register_command_handler(): registering 'ocd_halt'...
+Debug: 223 5 command.c:366 register_command_handler(): registering 'ocd_resume'...
+Debug: 224 5 command.c:366 register_command_handler(): registering 'ocd_reset'...
+Debug: 225 5 command.c:366 register_command_handler(): registering 'ocd_soft_reset_halt'...
+Debug: 226 5 command.c:366 register_command_handler(): registering 'ocd_step'...
+Debug: 227 5 command.c:366 register_command_handler(): registering 'ocd_mdw'...
+Debug: 228 5 command.c:366 register_command_handler(): registering 'ocd_mdh'...
+Debug: 229 5 command.c:366 register_command_handler(): registering 'ocd_mdb'...
+Debug: 230 5 command.c:366 register_command_handler(): registering 'ocd_mww'...
+Debug: 231 5 command.c:366 register_command_handler(): registering 'ocd_mwh'...
+Debug: 232 5 command.c:366 register_command_handler(): registering 'ocd_mwb'...
+Debug: 233 5 command.c:366 register_command_handler(): registering 'ocd_bp'...
+Debug: 234 5 command.c:366 register_command_handler(): registering 'ocd_rbp'...
+Debug: 235 5 command.c:366 register_command_handler(): registering 'ocd_wp'...
+Debug: 236 5 command.c:366 register_command_handler(): registering 'ocd_rwp'...
+Debug: 237 5 command.c:366 register_command_handler(): registering 'ocd_load_image'...
+Debug: 238 5 command.c:366 register_command_handler(): registering 'ocd_dump_image'...
+Debug: 239 5 command.c:366 register_command_handler(): registering 'ocd_verify_image'...
+Debug: 240 5 command.c:366 register_command_handler(): registering 'ocd_test_image'...
+Debug: 241 5 command.c:366 register_command_handler(): registering 'ocd_reset_nag'...
+Debug: 242 5 command.c:366 register_command_handler(): registering 'ocd_ps'...
+Debug: 243 5 command.c:366 register_command_handler(): registering 'ocd_test_mem_access'...
+Debug: 244 5 ftdi.c:599 ftdi_initialize(): ftdi interface using shortest path jtag state transitions
+Debug: 245 14 mpsse.c:363 mpsse_purge(): -
+Debug: 246 14 mpsse.c:644 mpsse_loopback_config(): off
+Debug: 247 14 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 248 14 core.c:1614 adapter_khz_to_speed(): have interface set up
+Debug: 249 14 mpsse.c:689 mpsse_set_frequency(): target 1500000 Hz
+Debug: 250 14 mpsse.c:681 mpsse_rtck_config(): off
+Debug: 251 14 mpsse.c:670 mpsse_divide_by_5_config(): off
+Debug: 252 14 mpsse.c:650 mpsse_set_divisor(): 19
+Debug: 253 14 mpsse.c:713 mpsse_set_frequency(): actually 1500000 Hz
+Debug: 254 14 core.c:1611 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 255 14 core.c:1614 adapter_khz_to_speed(): have interface set up
+Info : 256 14 core.c:1400 adapter_init(): clock speed 1500 kHz
+Debug: 257 14 openocd.c:132 handle_init_command(): Debug Adapter init complete
+Debug: 258 14 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_transport init
+Debug: 259 14 command.c:145 script_debug(): command - ocd_transport ocd_transport init
+Debug: 261 14 transport.c:240 handle_transport_init(): handle_transport_init
+Debug: 262 14 core.c:717 jtag_add_reset(): SRST line released
+Debug: 263 14 core.c:741 jtag_add_reset(): TRST line released
+Debug: 264 14 core.c:321 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 265 14 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 0 (post-reset)
+	action: runtest 100
+Debug: 266 14 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 100
+Debug: 267 14 command.c:145 script_debug(): command - runtest ocd_runtest 100
+Debug: 269 14 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag arp_init
+Debug: 270 14 command.c:145 script_debug(): command - ocd_jtag ocd_jtag arp_init
+Debug: 271 14 core.c:1413 jtag_init_inner(): Init JTAG chain
+Debug: 272 14 core.c:321 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 273 14 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 0 (post-reset)
+	action: runtest 100
+Debug: 274 14 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 100
+Debug: 275 14 command.c:145 script_debug(): command - runtest ocd_runtest 100
+Debug: 277 15 core.c:1046 jtag_examine_chain(): DR scan interrogation for IDCODE/BYPASS
+Debug: 278 15 core.c:321 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 279 15 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 0 (post-reset)
+	action: runtest 100
+Debug: 280 15 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 100
+Debug: 281 15 command.c:145 script_debug(): command - runtest ocd_runtest 100
+Info : 283 15 core.c:949 jtag_examine_chain_display(): JTAG tap: tms570.jrc tap/device found: 0x1b7b302f (mfg: 0x017, part: 0xb7b3, ver: 0x1)
+Debug: 284 15 core.c:1206 jtag_validate_ircapture(): IR capture validation scan
+Debug: 285 16 core.c:1263 jtag_validate_ircapture(): tms570.jrc: IR capture 0x01
+Debug: 286 16 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 1 (setup)
+	action: jtag tapenable tms570.dap
+Debug: 287 16 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag tapenable tms570.dap
+Debug: 288 16 command.c:145 script_debug(): command - ocd_jtag ocd_jtag tapenable tms570.dap
+Debug: 289 16 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.dap event: 2 (tap-enable)
+	action: icepick_c_tapenable tms570.jrc 0
+Debug: 290 16 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x07 -endstate IRPAUSE
+Debug: 291 16 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x07 -endstate IRPAUSE
+Debug: 293 16 command.c:145 script_debug(): command - drscan drscan tms570.jrc 8 0x89 -endstate DRPAUSE
+Debug: 294 16 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 295 17 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 297 17 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2164264960 -endstate DRPAUSE
+Debug: 298 17 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 299 17 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 301 17 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685403208 -endstate DRPAUSE
+Debug: 302 17 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 303 17 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 305 18 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685411400 -endstate DRPAUSE
+Debug: 306 18 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 307 18 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 309 18 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685411656 -endstate DRPAUSE
+Debug: 310 18 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x00 -endstate RUN/IDLE
+Debug: 311 18 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x00 -endstate RUN/IDLE
+Debug: 313 19 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 10
+Debug: 314 19 command.c:145 script_debug(): command - runtest ocd_runtest 10
+Info : 316 19 tcl.c:647 jtag_tap_handle_event(): JTAG tap: tms570.dap enabled
+Debug: 317 19 core.c:321 jtag_call_event_callbacks(): jtag event: TAP enabled
+Debug: 318 19 openocd.c:145 handle_init_command(): Examining targets...
+Debug: 319 19 target.c:1401 target_call_event_callbacks(): target event 21 (examine-start)
+Debug: 320 19 arm_adi_v5.c:766 ahbap_debugport_init():  
+Debug: 321 20 arm_adi_v5.c:868 ahbap_debugport_init(): MEM_AP Packed Transfers: enabled
+Debug: 322 21 arm_adi_v5.c:930 dap_find_ap(): Found APB-AP at AP index: 1 (IDR=0x04770002)
+Debug: 323 21 arm_adi_v5.c:930 dap_find_ap(): Found AHB-AP at AP index: 0 (IDR=0x14770001)
+Debug: 324 23 cortex_a.c:2439 cortex_a8_examine_first(): cpuid = 0x411fc142
+Debug: 325 23 cortex_a.c:2440 cortex_a8_examine_first(): ctypr = 0x8003c003
+Debug: 326 23 cortex_a.c:2441 cortex_a8_examine_first(): ttypr = 0x00000000
+Debug: 327 23 cortex_a.c:2442 cortex_a8_examine_first(): didr = 0x15040012
+Info : 328 23 arm_dpm.c:986 arm_dpm_setup(): tms570.cpu: hardware has 6 breakpoints, 2 watchpoints
+Debug: 329 23 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 00001143
+Debug: 330 23 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 00001147
+Debug: 331 24 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 0000114b
+Debug: 332 24 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 0000114f
+Debug: 333 24 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 00001153
+Debug: 334 25 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 00001157
+Debug: 335 25 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 000011c3
+Debug: 336 25 cortex_a.c:702 cortex_a8_bpwp_disable(): A8: bpwp disable, cr 000011c7
+Debug: 337 25 cortex_a.c:2466 cortex_a8_examine_first(): Configured 6 hw breakpoints
+Debug: 338 25 cortex_a.c:173 cortex_a8_init_debug_access():  
+Debug: 339 27 target.c:1401 target_call_event_callbacks(): target event 22 (examine-end)
+Debug: 340 27 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_flash init
+Debug: 341 27 command.c:145 script_debug(): command - ocd_flash ocd_flash init
+Debug: 343 27 tcl.c:870 handle_flash_init_command(): Initializing flash devices...
+Debug: 344 27 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_mflash init
+Debug: 345 27 command.c:145 script_debug(): command - ocd_mflash ocd_mflash init
+Debug: 347 27 mflash.c:1379 handle_mflash_init_command(): Initializing mflash devices...
+Debug: 348 27 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_nand init
+Debug: 349 27 command.c:145 script_debug(): command - ocd_nand ocd_nand init
+Debug: 351 28 tcl.c:497 handle_nand_init_command(): Initializing NAND devices...
+Debug: 352 28 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_pld init
+Debug: 353 28 command.c:145 script_debug(): command - ocd_pld ocd_pld init
+Debug: 355 28 pld.c:207 handle_pld_init_command(): Initializing PLDs...
+Debug: 356 28 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_ftdi_set_signal PWR_RST 1
+Debug: 357 28 command.c:145 script_debug(): command - ftdi_set_signal ocd_ftdi_set_signal PWR_RST 1
+Debug: 359 29 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag arp_init
+Debug: 360 29 command.c:145 script_debug(): command - ocd_jtag ocd_jtag arp_init
+Debug: 361 29 core.c:1413 jtag_init_inner(): Init JTAG chain
+Debug: 362 29 core.c:321 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 363 29 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 0 (post-reset)
+	action: runtest 100
+Debug: 364 29 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 100
+Debug: 365 29 command.c:145 script_debug(): command - runtest ocd_runtest 100
+Debug: 367 29 core.c:1046 jtag_examine_chain(): DR scan interrogation for IDCODE/BYPASS
+Debug: 368 29 core.c:321 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 369 29 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 0 (post-reset)
+	action: runtest 100
+Debug: 370 29 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 100
+Debug: 371 29 command.c:145 script_debug(): command - runtest ocd_runtest 100
+Info : 373 29 core.c:949 jtag_examine_chain_display(): JTAG tap: tms570.jrc tap/device found: 0x1b7b302f (mfg: 0x017, part: 0xb7b3, ver: 0x1)
+Debug: 374 29 core.c:1206 jtag_validate_ircapture(): IR capture validation scan
+Debug: 375 30 core.c:1263 jtag_validate_ircapture(): tms570.jrc: IR capture 0x01
+Debug: 376 30 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.jrc event: 1 (setup)
+	action: jtag tapenable tms570.dap
+Debug: 377 30 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_jtag tapenable tms570.dap
+Debug: 378 30 command.c:145 script_debug(): command - ocd_jtag ocd_jtag tapenable tms570.dap
+Debug: 379 30 tcl.c:630 jtag_tap_handle_event(): JTAG tap: tms570.dap event: 2 (tap-enable)
+	action: icepick_c_tapenable tms570.jrc 0
+Debug: 380 30 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x07 -endstate IRPAUSE
+Debug: 381 30 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x07 -endstate IRPAUSE
+Debug: 383 30 command.c:145 script_debug(): command - drscan drscan tms570.jrc 8 0x89 -endstate DRPAUSE
+Debug: 384 30 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 385 30 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 387 30 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2164264960 -endstate DRPAUSE
+Debug: 388 30 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 389 30 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 391 31 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685403208 -endstate DRPAUSE
+Debug: 392 31 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 393 31 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 395 31 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685411400 -endstate DRPAUSE
+Debug: 396 31 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 397 31 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x02 -endstate IRPAUSE
+Debug: 399 31 command.c:145 script_debug(): command - drscan drscan tms570.jrc 32 2685411656 -endstate DRPAUSE
+Debug: 400 32 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_irscan tms570.jrc 0x00 -endstate RUN/IDLE
+Debug: 401 32 command.c:145 script_debug(): command - irscan ocd_irscan tms570.jrc 0x00 -endstate RUN/IDLE
+Debug: 403 32 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_runtest 10
+Debug: 404 32 command.c:145 script_debug(): command - runtest ocd_runtest 10
+Info : 406 32 tcl.c:647 jtag_tap_handle_event(): JTAG tap: tms570.dap enabled
+Debug: 407 32 core.c:321 jtag_call_event_callbacks(): jtag event: TAP enabled
+User : 408 32 command.c:691 command_run_line(): 1User : 409 32 command.c:693 command_run_line(): 
+Debug: 410 32 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_init
+Debug: 411 32 command.c:145 script_debug(): command - init ocd_init
+Info : 413 11618 server.c:83 add_connection(): accepting 'gdb' connection from 3333
+Debug: 414 11618 breakpoints.c:359 breakpoint_clear_target_internal(): Delete all breakpoints for target: tms570.cpu
+Debug: 415 11618 breakpoints.c:499 watchpoint_clear_target(): Delete all watchpoints for target: tms570.cpu
+Debug: 416 11618 target.c:1401 target_call_event_callbacks(): target event 23 (gdb-attach)
+Debug: 417 11618 target.c:4079 target_handle_event(): target: (0) tms570.cpu (cortex_r4) event: 23 (gdb-attach) action: 
+	cortex_r4 dbginit
+	halt
+
+Debug: 418 11618 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_cortex_r4 dbginit
+Debug: 419 11618 command.c:145 script_debug(): command - ocd_cortex_r4 ocd_cortex_r4 dbginit
+Debug: 421 11619 cortex_a.c:173 cortex_a8_init_debug_access():  
+Debug: 422 11621 command.c:145 script_debug(): command - ocd_command ocd_command type ocd_halt
+Debug: 423 11621 command.c:145 script_debug(): command - halt ocd_halt
+Debug: 425 11622 target.c:2636 handle_halt_command(): -
+Debug: 426 11624 cortex_a.c:810 cortex_a8_poll(): Target halted
+Debug: 427 11624 cortex_a.c:1119 cortex_a8_debug_entry(): dscr = 0x03084003
+Debug: 428 11626 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 429 11627 arm_dpm.c:186 dpm_read_reg(): READ: r0, 08000010
+Debug: 430 11627 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xe10f0000
+Debug: 431 11627 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 432 11628 armv4_5.c:422 arm_set_cpsr(): set CPSR 0xa0000313: Supervisor mode, ARM state
+Debug: 433 11628 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee001e15
+Debug: 434 11629 arm_dpm.c:186 dpm_read_reg(): READ: r1, 08000028
+Debug: 435 11629 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee002e15
+Debug: 436 11630 arm_dpm.c:186 dpm_read_reg(): READ: r2, 0800001c
+Debug: 437 11630 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee003e15
+Debug: 438 11631 arm_dpm.c:186 dpm_read_reg(): READ: r3, fffffff9
+Debug: 439 11631 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee004e15
+Debug: 440 11632 arm_dpm.c:186 dpm_read_reg(): READ: r4, 00000000
+Debug: 441 11632 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee005e15
+Debug: 442 11633 arm_dpm.c:186 dpm_read_reg(): READ: r5, 00000000
+Debug: 443 11633 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee006e15
+Debug: 444 11634 arm_dpm.c:186 dpm_read_reg(): READ: r6, 00000000
+Debug: 445 11634 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee007e15
+Debug: 446 11635 arm_dpm.c:186 dpm_read_reg(): READ: r7, 00000000
+Debug: 447 11635 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee008e15
+Debug: 448 11637 arm_dpm.c:186 dpm_read_reg(): READ: r8, 00000000
+Debug: 449 11637 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee009e15
+Debug: 450 11637 arm_dpm.c:186 dpm_read_reg(): READ: r9, 00000000
+Debug: 451 11637 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee00ae15
+Debug: 452 11638 arm_dpm.c:186 dpm_read_reg(): READ: r10, 00000000
+Debug: 453 11639 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee00be15
+Debug: 454 11640 arm_dpm.c:186 dpm_read_reg(): READ: r11, 00000000
+Debug: 455 11640 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee00ce15
+Debug: 456 11641 arm_dpm.c:186 dpm_read_reg(): READ: r12, ffffffff
+Debug: 457 11641 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee00de15
+Debug: 458 11642 arm_dpm.c:186 dpm_read_reg(): READ: sp_svc, 080031f8
+Debug: 459 11642 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee00ee15
+Debug: 460 11643 arm_dpm.c:186 dpm_read_reg(): READ: lr_svc, 00008a28
+Debug: 461 11643 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xe1a0000f
+Debug: 462 11643 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 463 11644 arm_dpm.c:186 dpm_read_reg(): READ: pc, 00008b04
+Debug: 464 11645 arm_dpm.c:67 dpm_mrc(): MRC p15, 0, r0, c1, c0, 0
+Debug: 465 11645 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee110f10
+Debug: 466 11645 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 467 11646 cortex_a.c:1241 cortex_a8_post_debug_entry(): cp15_control_reg: 8ae50878
+Debug: 468 11647 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee300f30
+Debug: 469 11647 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Info : 470 11648 armv7a.c:590 armv7a_identify_cache(): number of cache level 1
+Debug: 471 11648 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee500f10
+Debug: 472 11649 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 473 11650 arm_dpm.c:67 dpm_mrc(): MRC p15, 2, r0, c0, c0, 0
+Debug: 474 11650 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee500f10
+Debug: 475 11651 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 476 11652 cortex_a.c:462 cortex_a8_write_dcc(): write DCC 0x00000001
+Debug: 477 11652 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee100e15
+Debug: 478 11652 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee500f10
+Debug: 479 11653 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee300f10
+Debug: 480 11654 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 481 11654 cortex_a.c:462 cortex_a8_write_dcc(): write DCC 0x00000000
+Debug: 482 11654 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee100e15
+Debug: 483 11655 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee500f10
+Debug: 484 11656 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee300f10
+Debug: 485 11656 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Debug: 486 11657 cortex_a.c:462 cortex_a8_write_dcc(): write DCC 0x00000000
+Debug: 487 11657 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee100e15
+Debug: 488 11658 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee500f10
+Debug: 489 11659 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee100fb0
+Debug: 490 11659 cortex_a.c:219 cortex_a8_exec_opcode(): exec opcode 0xee000e15
+Error: 491 11660 armv7a.c:558 armv7a_read_mpidr(): mpdir not in multiprocessor format
+Debug: 492 11660 target.c:1401 target_call_event_callbacks(): target event 0 (gdb-halt)
+Debug: 493 11660 target.c:1401 target_call_event_callbacks(): target event 1 (halted)
+User : 494 11660 target.c:1774 target_arch_state(): target state: halted
+User : 495 11660 armv4_5.c:669 arm_arch_state(): target halted in ARM state due to debug-request, current mode: Supervisor
+cpsr: 0xa0000313 pc: 0x00008b04
+User : 496 11660 armv7a.c:754 armv7a_arch_state(): D-Cache: disabled, I-Cache: disabled
+Debug: 497 11660 gdb_server.c:986 gdb_new_connection(): New GDB Connection: 1, Target tms570.cpu, state: halted
+Debug: 498 11660 gdb_server.c:2662 gdb_input_inner(): received packet: 'qSupported:multiprocess+;qRelocInsn+'
+Debug: 499 11661 gdb_server.c:2662 gdb_input_inner(): received packet: 'QStartNoAckMode'
+Debug: 500 11661 gdb_server.c:632 gdb_get_packet_inner(): Received first acknowledgment after entering noack mode. Ignoring it.
+Debug: 501 11661 gdb_server.c:2662 gdb_input_inner(): received packet: '!'
+Debug: 502 11661 gdb_server.c:2662 gdb_input_inner(): received packet: 'Hg0'
+Debug: 503 11661 gdb_server.c:2662 gdb_input_inner(): received packet: 'qXfer:features:read:target.xml:0,fff'
+Debug: 504 11661 gdb_server.c:2662 gdb_input_inner(): received packet: 'qXfer:features:read:target.xml:fff,1000'
+Debug: 505 11662 gdb_server.c:2662 gdb_input_inner(): received packet: '?'
+Debug: 506 11662 gdb_server.c:2662 gdb_input_inner(): received packet: 'Hc-1'
+Debug: 507 11662 gdb_server.c:2662 gdb_input_inner(): received packet: 'qC'
+Debug: 508 11663 gdb_server.c:2662 gdb_input_inner(): received packet: 'qAttached'
+Debug: 509 11663 gdb_server.c:2662 gdb_input_inner(): received packet: 'g'
+Debug: 510 11663 gdb_server.c:2662 gdb_input_inner(): received packet: 'm48b0000,4'
+Debug: 511 11663 gdb_server.c:1373 gdb_read_memory_packet(): addr: 0x048b0000, len: 0x00000004
+Debug: 512 11663 target.c:1916 target_read_buffer(): reading buffer of 4 byte at 0x048b0000
+Debug: 513 11663 cortex_a.c:2145 cortex_a8_read_memory(): Reading memory at address 0x48b0000; size 4; count 1
+Debug: 514 11663 cortex_a.c:2110 cortex_a8_read_phys_memory(): Reading memory at real address 0x48b0000; size 4; count 1
+Debug: 515 11663 adi_v5_jtag.c:271 jtagdp_transaction_endcheck(): jtag-dp: CTRL/STAT error, 0xf8000021
+Debug: 516 11663 adi_v5_jtag.c:291 jtagdp_transaction_endcheck(): MEM-AP Cached values: ap_bank 0x0, ap_csw 0xa2000022, ap_tar 0x48b0000
+Error: 517 11663 adi_v5_jtag.c:298 jtagdp_transaction_endcheck(): JTAG-DP STICKY ERROR
+Debug: 518 11664 adi_v5_jtag.c:315 jtagdp_transaction_endcheck(): jtag-dp: CTRL/STAT 0xf8000001
+Error: 519 11664 adi_v5_jtag.c:331 jtagdp_transaction_endcheck(): MEM_AP_CSW 0x2800062, MEM_AP_TAR 0x48b0000
+Error: 520 11664 arm_adi_v5.c:463 mem_ap_read(): Failed to read memory at 0x048b0000
+Debug: 521 11665 gdb_server.c:2662 gdb_input_inner(): received packet: 'qTStatus'
