@@ -1,3 +1,3 @@
 #!/bin/bash
 
-openocd -f ti_tmdx570ls20susb.cfg -s $CODE/openocd/tcl -d 3 2> gdb.txt
+openocd -s $CODE/openocd/tcl -d 3
